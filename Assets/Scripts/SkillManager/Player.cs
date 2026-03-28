@@ -1,8 +1,7 @@
-
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Player :MonoBehaviour
+public class Player : MonoBehaviour
 {
     public Skill Target;
 
@@ -14,13 +13,13 @@ public class Player :MonoBehaviour
         //CheckName(Target);
 
 
-        
+
 
     }
 
     public void CheckName(Skill target)
     {
-        if(target == null)
+        if (target == null)
         {
             Debug.LogWarning("Target skill is null.");
             return;
@@ -32,20 +31,20 @@ public class Player :MonoBehaviour
 
     public void TryToLearnSkill(Skill target)
     {
-        if( SkillManager.Instance.TryLearnSkill(this, target, out Skill result))
+        if (SkillManager.Instance.TryLearnSkill(this, target, out Skill result))
         {
-          
-            if(LearndSkills.Contains(target))
+
+            if (LearndSkills.Contains(target))
             {
                 Debug.Log("Ya has aprendido esta habilidad");
                 return;
             }
             LearndSkills.Add(result);
-            Debug.Log("Haiblidad aÃ±adida");
+            Debug.Log("Haiblidad añadida");
         }
         else
         {
-            Debug.Log("Cant learn right now :C , requieres el nivel"+ target.LevelRestriction);
+            Debug.Log("Cant learn right now :C , requieres el nivel" + target.LevelRestriction);
         }
     }
 

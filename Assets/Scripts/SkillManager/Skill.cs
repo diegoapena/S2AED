@@ -1,17 +1,18 @@
 using UnityEngine;
 
-[CreateAssetMenu(fileName = "Skill", 
+[CreateAssetMenu(fileName = "Skill",
     menuName = "LeagueOfLegends/Skill")]
 public class Skill : ScriptableObject
 {
-   [SerializeField] private string skillName;
-   [SerializeField] private string skillDescription;
 
-   [SerializeField] private int cost;
-   [SerializeField] private float cooldown;
-   [SerializeField] private float damage;
- 
-   [SerializeField] private int levelRestriction;
+    [SerializeField] private string skillName;
+    [SerializeField] private string skillDescription;
+
+    [SerializeField] private int cost;
+    [SerializeField] private float cooldown;
+    [SerializeField] private float damage;
+
+    [SerializeField] private int levelRestriction;
 
     public string SkillName => skillName;
     public string SkillDescription => skillDescription;
