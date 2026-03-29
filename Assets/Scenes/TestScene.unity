@@ -457,9 +457,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::SkillManager
   skillList:
-  - {fileID: 11400000, guid: 99960e9dd72ec01469c018771fc88c03, type: 2}
-  - {fileID: 11400000, guid: c41f843d462121147919f36d2d3f124a, type: 2}
   - {fileID: 11400000, guid: 83fa130853927de439795eee6df4402b, type: 2}
+  - {fileID: 11400000, guid: 0ace1ac7418b5494a8e9fc25131488ba, type: 2}
+  - {fileID: 11400000, guid: 14e55f71aea1e6b46a2917ab09530b60, type: 2}
 --- !u!4 &668295368
 Transform:
   m_ObjectHideFlags: 0
@@ -685,13 +685,13 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 668295367}
-        m_TargetAssemblyTypeName: SkillManager, Assembly-CSharp
-        m_MethodName: BtnSelectSkill
+      - m_Target: {fileID: 1930844175}
+        m_TargetAssemblyTypeName: Player, Assembly-CSharp
+        m_MethodName: TryToLearnSkill
         m_Mode: 2
         m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: 
+          m_ObjectArgument: {fileID: 11400000, guid: 14e55f71aea1e6b46a2917ab09530b60, type: 2}
+          m_ObjectArgumentAssemblyTypeName: Skill, Assembly-CSharp
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
@@ -866,7 +866,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 174c78a44d889e2419c97bbc5f2b524d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Player
-  Target: {fileID: 11400000, guid: 99960e9dd72ec01469c018771fc88c03, type: 2}
+  Target: {fileID: 11400000, guid: 83fa130853927de439795eee6df4402b, type: 2}
   Level: 10
   LearndSkills: []
 --- !u!4 &1930844176
